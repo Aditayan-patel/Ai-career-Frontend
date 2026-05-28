@@ -45,12 +45,14 @@ const Login = () => {
 
       <div className="glass-card w-full max-w-md p-10 flex flex-col items-center gap-8 z-10">
         <div className="flex flex-col items-center gap-3 text-center">
-          <div className="w-12 h-12 rounded-xl bg-linear-to-br from-indigo-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-indigo-500/30 text-3xl">
-            📚
-          </div>
-          <h1 className="text-2xl font-bold tracking-tight text-gradient">
-            CareerAI
-          </h1>
+          <img
+            src="/jobpilot logo.png"
+            alt="JobPilot AI"
+            className="h-16 w-auto object-contain mix-blend-screen"
+          />
+          {/* <h1 className="text-2xl font-bold tracking-tight text-gradient">
+            JobPilotAI
+          </h1> */}
           <p className="text-white/40 text-sm leading-relaxed text-gradient">
             Your AI-powered career co-poilet - build, analyse, and land your
             next role.
@@ -60,7 +62,7 @@ const Login = () => {
         <div className="flex flex-wrap justify-center gap-2">
           {features.map(({ icon: Icon, label }) => (
             <span key={label} className="feature-pill">
-              <Icon size={11} className="text-indigo-400" />
+              <Icon size={14} className="text-indigo-400" />
               {label}
             </span>
           ))}
@@ -89,7 +91,7 @@ const Login = () => {
           </button>
         </div>
 
-        <div className="text-[11px] text-white/25 text-center leading-relaxed">
+        <div className="text-[11px] text-white/65 text-center leading-relaxed">
           By signing in you agree to our{" "}
           <a
             href="#"

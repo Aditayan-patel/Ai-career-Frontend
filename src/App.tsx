@@ -10,7 +10,7 @@ import PublicRoutes from "./components/PublicRoutes";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 import AnalysePage from "./pages/Analyse";
 import JobMatcherPage from "./pages/JobMatcher";
-import InterviewPrep from "./pages/interview";
+import InterviewPrep from "./pages/Interview";
 import BuildResumePage from "./pages/BuildResume";
 
 const App = () => {

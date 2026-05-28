@@ -21,11 +21,18 @@ export const AppProvider = ({ children }: AppProps) => {
   const [isAuth, setIsAuth] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  async function fetchUser() {
+  const fetchUser = async () => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      setLoading(false);
+      return;
+    }
+
     try {
       const { data } = await axios.get(`${server}/api/user/me`, {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          Authorization: `Bearer ${token}`,
         },
       });
 
@@ -33,20 +40,28 @@ export const AppProvider = ({ children }: AppProps) => {
       setIsAuth(true);
     } catch (error) {
       console.log(error);
+
+      setUser(null);
+      setIsAuth(false);
     } finally {
       setLoading(false);
     }
-  }
+  };
 
   const LogoutUser = () => {
-    localStorage.setItem("token", "");
+    localStorage.removeItem("token");
     setUser(null);
     setIsAuth(false);
+
     toast.success("Logged Out");
   };
 
   useEffect(() => {
-    fetchUser();
+    const init = async () => {
+      await fetchUser();
+    };
+
+    init();
   }, []);
 
   return (

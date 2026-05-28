@@ -14,9 +14,9 @@ const Account = () => {
       <div className="w-full max-w-xl flex flex-col gap-5">
         <div className="glass-card p-6 flex items-center gap-4">
           <img
-            src="/user.png"
+            src="/user.webp"
             alt="xyz"
-            className="w-16 h-16 rounded-2xl object-cover ring-2 ring-white/10"
+            className="w-16 h-16 rounded-2xl object-cover p-1 ring-2 ring-white/10"
           />
 
           <div className="flex-1 min-w-0">

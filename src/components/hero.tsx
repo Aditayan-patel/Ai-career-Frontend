@@ -16,31 +16,23 @@ function Hero() {
       />
 
       <div className="animate-fade-in mb-3 md:mb-0">
-        <div
-          className="
-      inline-flex items-center gap-2
-      px-4 py-1.5
-      rounded-full
-      bg-white/5 backdrop-blur-md
-    "
-        >
-          <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-
-          <span
-            className="
+  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#00A9FE]/20 backdrop-blur-md">
+    <span className="w-2 h-2 bg-[#00A9FE] rounded-full animate-pulse"></span>
+    <span
+      className="
         text-sm
-        bg-[linear-gradient(110deg,#10b981,25%,#ffffff,50%,#10b981,75%,#10b981)]
+        bg-[linear-gradient(110deg,#00A9FE,25%,#ffffff,50%,#00A9FE,75%,#00A9FE)]
         bg-[length:200%_100%]
         bg-clip-text
         text-transparent
         font-medium
         animate-shine
       "
-          >
-            AI-Powered Career Platform
-          </span>
-        </div>
-      </div>
+    >
+      AI-Powered Career Platform
+    </span>
+  </div>
+</div>
 
       <h1
         className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.08] tracking-tight max-w-4xl mb-6 animate-slide-up"
@@ -95,8 +87,7 @@ function Hero() {
     animate-slide-up
 
     border border-transparent
-    hover:border-emerald-500/40
-    hover:shadow-[0_0_20px_rgba(16,185,129,0.25)]
+   
     transition-all duration-300
   "
         style={{ animationDelay: "0.3s" }}

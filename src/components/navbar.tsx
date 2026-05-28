@@ -7,17 +7,13 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { isAuth, user } = useAppData();
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 border-b border-white/6 bg-[#080b14]/80 backdrop-blur-xl">
-      <Link to={"/"} className="flex items-center gap-2.5">
-        <div className="w-8 h-8 rounded-lg bg-linear-to-br from-indigo-500 to-emerald-400 flex caret-indigo-50 justify-center shadow-lg shadow-indigo-500/30 text-2xl">
-          📚
-        </div>
-        <span
-          className="font-bold text-lg tracking-tight"
-          style={{ fontFamily: "'Syne', sans-serif" }}
-        >
-          Career<span className="text-gradient">AI</span>
-        </span>
+   <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between pl-2 pr-6 md:px-12 py-4 border-b border-white/6 bg-[#080b14]/80 backdrop-blur-xl h-16">
+      <Link to={"/"}>
+        <img
+          src="/jobpilot logo.png"
+          alt="JobPilot AI"
+          className="h-25 md:h-30 w-35 md:w-40 object-contain mix-blend-screen"
+        />
       </Link>
 
       <div className="hidden md:flex items-center gap-8 text-sm text-white/50">
@@ -48,9 +44,9 @@ const Navbar = () => {
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <img
-              src="/user.png"
+              src="/user.webp"
               alt=""
-              className="w-8 h-8 rounded-full object-cover ring-2 ring-white/10"
+              className="w-8 h-8 rounded-full object-cover ring-2 p-0.5 ring-white/10"
             />
             <span className="text-sm text-white/70">
               {user?.name?.split(" ")[0]}
@@ -76,10 +72,10 @@ const Navbar = () => {
 
       {/* mobile view */}
       <button
-        className="md:hidden text-white/60 hover:text-white"
+        className="md:hidden text-white/70 hover:text-white"
         onClick={() => setOpen(!open)}
       >
-        {open ? <X size={20} /> : <Menu size={20} />}
+        {open ? <X size={30} /> : <Menu size={30} />}
       </button>
 
       {open && (
@@ -112,9 +108,9 @@ const Navbar = () => {
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <img
-                src="/user.png"
+                src="/user.webp"
                 alt=""
-                className="w-8 h-8 rounded-full object-cover ring-2 ring-white/10"
+                className="w-8 h-8 rounded-full object-cover ring-2 p-0.5 ring-white/10"
               />
               <span className="text-sm text-white/70">
                 {user?.name?.split(" ")[0]}
