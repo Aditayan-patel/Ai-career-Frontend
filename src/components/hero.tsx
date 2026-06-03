@@ -1,4 +1,4 @@
-import { ArrowRight, ChevronRight, Zap } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useAppData } from "../context/AppContext";
 
