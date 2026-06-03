@@ -83,7 +83,7 @@ function PlanCTA({
     setLoading(true);
     let duration;
 
-    if (price === "₹299") {
+    if (price === "₹99") {
       duration = 1;
     } else {
       duration = 6;
@@ -102,10 +102,10 @@ function PlanCTA({
     );
 
     const options = {
-      key: "rzp_test_RaL8PDo9YBejEW", // Enter the Key ID generated from the Dashboard
+      key: "rzp_test_Sx10VDP9lffj2w", // Enter the Key ID generated from the Dashboard
       amount: order.id, // Amount is in currency subunits.
       currency: "INR",
-      name: "Career AI", //your business name
+      name: "Jobpilot AI", //your business name
       description: "Find job easily",
       order_id: order.id, // This is a sample Order ID. Pass the `id` obtained in the response of Step 1
 
