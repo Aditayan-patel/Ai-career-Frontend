@@ -12,31 +12,9 @@ import AnalysePage from "./pages/Analyse";
 import JobMatcherPage from "./pages/JobMatcher";
 import InterviewPrep from "./pages/Interview";
 import BuildResumePage from "./pages/BuildResume";
-import { useEffect, useRef } from "react";
-import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
   const { loading } = useAppData();
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!scrollRef.current) return;
-
-    const locomotiveScroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      smartphone: {
-        smooth: true,
-      },
-      tablet: {
-        smooth: true,
-      },
-    });
-
-    return () => {
-      locomotiveScroll.destroy();
-    };
-  }, []);
 
   if (loading) {
     return <Loading />;
@@ -44,11 +22,12 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div data-scroll-container  ref={scrollRef}>
+      <div>
         <Navbar />
 
         <Routes>
           <Route path="/" element={<Home />} />
+
           <Route element={<PublicRoutes />}>
             <Route path="/login" element={<Login />} />
           </Route>
