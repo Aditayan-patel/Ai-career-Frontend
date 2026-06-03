@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.tsx";
 import { AppProvider } from "./context/AppContext.tsx";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import "locomotive-scroll/dist/locomotive-scroll.css";
+
 
 export const server = "https://jobpilot-ai-backend.onrender.com";
 
