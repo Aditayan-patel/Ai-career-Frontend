@@ -6,7 +6,7 @@ import { AppProvider } from "./context/AppContext.tsx";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
-export const server = "http://localhost:5000";
+export const server = "https://jobpilot-ai-backend.onrender.com";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
