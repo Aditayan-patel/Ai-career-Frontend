@@ -16,10 +16,10 @@ function Hero() {
       />
 
       <div className="animate-fade-in mb-3 md:mb-0">
-  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#00A9FE]/20 backdrop-blur-md">
-    <span className="w-2 h-2 bg-[#00A9FE] rounded-full animate-pulse"></span>
-    <span
-      className="
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#00A9FE]/20 backdrop-blur-md">
+          <span className="w-2 h-2 bg-[#00A9FE] rounded-full animate-pulse"></span>
+          <span
+            className="
         text-sm
         bg-[linear-gradient(110deg,#00A9FE,25%,#ffffff,50%,#00A9FE,75%,#00A9FE)]
         bg-[length:200%_100%]
@@ -28,11 +28,11 @@ function Hero() {
         font-medium
         animate-shine
       "
-    >
-      AI-Powered Career Platform
-    </span>
-  </div>
-</div>
+          >
+            AI-Powered Career Platform
+          </span>
+        </div>
+      </div>
 
       <h1
         className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.08] tracking-tight max-w-4xl mb-6 animate-slide-up"

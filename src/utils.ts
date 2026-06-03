@@ -29,7 +29,7 @@ export const plans = [
   },
   {
     name: "Pro Monthly",
-    price: "₹299",
+    price: "₹99",
     period: "/ month",
     badge: "Most Flexible",
     desc: "Full access, cancel anytime",
@@ -47,10 +47,10 @@ export const plans = [
   },
   {
     name: "Pro 6-Month",
-    price: "₹1,499",
+    price: "₹499",
     period: "/ 6 months",
     badge: "Best Value",
-    desc: "Save 17% vs monthly",
+    desc: "Save 16% vs monthly",
     features: [
       "Everything in Pro Monthly",
       "Early access to new features",

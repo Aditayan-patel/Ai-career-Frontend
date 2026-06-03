@@ -28,13 +28,13 @@ function StatusBadge() {
       }`}
     >
       <span
-        className={`w-2 h-2 rounded-full ${
-          isPro ? "bg-emerald-400" : "bg-white/30"
+        className={`w-2 h-2 rounded-full  animate-pulse ${
+          isPro ? "bg-emerald-500" : "bg-white/60 border "
         }`}
       />
       {isPro
         ? `Pro active • expires ${new Date(
-            user!.subscription!
+            user!.subscription!,
           ).toLocaleDateString("en-IN", {
             day: "numeric",
             month: "short",
@@ -59,7 +59,7 @@ function PlanCTA({
   if (isAuth) {
     if (plan.name === "Free") {
       return (
-        <p className="mt-auto text-center text-xs text-white/30 py-3">
+        <p className="mt-auto text-center text-xs text-white/70 py-3 animate-bounce">
           {isPro ? "Your previous plan" : "✔️ Currently active"}
         </p>
       );
@@ -67,7 +67,7 @@ function PlanCTA({
 
     if (isPro) {
       return (
-        <p className="mt-auto text-center text-xs text-white/30 py-3">
+        <p className="mt-auto text-center text-xs text-white/30 py-3 ">
           ✔️ Already subscribed
         </p>
       );
@@ -98,7 +98,7 @@ function PlanCTA({
         headers: {
           Authorization: `Bearer ${token}`,
         },
-      }
+      },
     );
 
     const options = {
@@ -125,7 +125,7 @@ function PlanCTA({
               headers: {
                 Authorization: `Bearer ${token}`,
               },
-            }
+            },
           );
 
           toast.success(data.message);
@@ -151,7 +151,7 @@ function PlanCTA({
       className={`mt-auto text-center text-sm font-semibold py-3 rounded-xl transition-all duration-200 ${
         highlight
           ? "btn-primary"
-          : "bg-white/6 hover:bg-white/10 boder border-white/10 text-white"
+          : "bg-gradient-to-r from-emerald-700 via-green-500 to-green-400 text-white shadow-lg shadow-emerald-500/20"
       }`}
       onClick={() => handleSubscribe(plan.price)}
       disabled={loading}
@@ -174,10 +174,10 @@ const Pricing = () => {
         >
           Start free. Upgrade <span className="text-gradient">when ready.</span>
         </h2>
-        <p className="text-white/40 mt-4 max-w-md mx-auto">
+        <p className="text-white/40 mt-4 max-w-md mx-auto ">
           Your first 3 requests are completely free - no card needed.
         </p>
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center mt-6 ">
           <StatusBadge />
         </div>
       </div>
@@ -186,18 +186,19 @@ const Pricing = () => {
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className={`glass-card p-8 flex flex-col gap-6 relative transition-all duration-300 ${
-              plan.highlight
-                ? "border-indigo-500/10 shadow-2xl shadow-indigo-500/10 scale-[1.02]"
-                : "hover:border-white/14"
-            }`}
+            className={`glass-card p-8 flex flex-col gap-6 relative
+    border border-cyan-500/20
+    hover:border-cyan-400/50
+    hover:-translate-y-2
+    transition-all duration-300
+    ${plan.highlight ? "shadow-2xl shadow-cyan-500/20 scale-[1.02]" : ""}`}
           >
             {plan.badge && (
               <span
                 className={`absolute -top-2 left-1/2 -translate-x-1/2 text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full ${
                   plan.highlight
                     ? "bg-linear-to-r from-indigo-500 to-emerald-400 text-white"
-                    : "bg-white/10 text-white/60"
+                    : "bg-gradient-to-r from-emerald-700 via-green-500 to-green-400 text-white shadow-lg shadow-emerald-500/20"
                 }`}
               >
                 {plan.badge}
@@ -229,7 +230,7 @@ const Pricing = () => {
               {plan.features.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-2 text-sm text-white/60"
+                  className="flex items-start gap-2 text-sm text-white/60 "
                 >
                   <CheckCircle
                     size={14}

@@ -244,7 +244,7 @@ const BuildResumePage = () => {
                   onChange={(v: string) =>
                     setBasics((p) => ({ ...p, location: v }))
                   }
-                  placeholder="Ranchi, 812345"
+                  placeholder="Jabalpur, 482056"
                 />
                 <Field
                   label="Linkedin Url"
@@ -302,7 +302,7 @@ const BuildResumePage = () => {
                       label="Location"
                       value={exp.location}
                       onChange={(v: string) => updateExp(ei, "location", v)}
-                      placeholder="Ranchi, jharkhand"
+                      placeholder="Jabalpur, ( MP )"
                     />
                     <Field
                       label="Start Date"

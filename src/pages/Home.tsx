@@ -5,7 +5,7 @@ import Pricing from "../components/pricing";
 
 const Home = () => {
   return (
-    <div className="bg-page">
+    <div  data-scroll-section className="bg-page">
       <Hero />
       <Features />
       <Pricing />
