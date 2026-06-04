@@ -4,7 +4,7 @@
 
 **Analyse your resume, get an ATS score, discover the right jobs, build a stunning resume, and ace every interview — all in one place.**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://jobpilot-ai-frontend.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://jobpilotai-aditayan.vercel.app/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-95.8%25-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
