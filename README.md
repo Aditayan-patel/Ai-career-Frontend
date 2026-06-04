@@ -4,11 +4,13 @@
 
 **Analyse your resume, get an ATS score, discover the right jobs, build a stunning resume, and ace every interview — all in one place.**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://jobpilot-ai-frontend.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://jobpilotai-aditayan.vercel.app/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-95.8%25-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Utility--First_CSS-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+[![ESLint](https://img.shields.io/badge/ESLint-Code%20Quality-4B32C3?style=for-the-badge&logo=eslint)](https://eslint.org/)
+[![React Router](https://img.shields.io/badge/React_Router-Routing-CA4245?style=for-the-badge&logo=reactrouter)](https://reactrouter.com/)
 
 <br/>
 
@@ -43,7 +45,7 @@
 
 Whether you're a fresher applying for your first job or an experienced professional switching careers, JobPilot AI gives you the edge you need to land your dream job faster.
 
-> 🔗 **Live:** [https://jobpilot-ai-frontend.vercel.app](https://jobpilot-ai-frontend.vercel.app)
+> 🔗 **Live:** [https://jobpilotai-aditayan.vercel.app/](https://jobpilotai-aditayan.vercel.app/)
 
 ---
 
@@ -234,7 +236,7 @@ VITE_API_KEY=your_api_key_here
 
 This project is deployed on **Vercel**.
 
-🔗 **Live URL:** [https://jobpilot-ai-frontend.vercel.app](https://jobpilot-ai-frontend.vercel.app)
+🔗 **Live URL:** [https://jobpilotai-aditayan.vercel.app/](https://jobpilotai-aditayan.vercel.app/)
 
 To deploy your own instance:
 
