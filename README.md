@@ -4,7 +4,7 @@
 
 **Analyse your resume, get an ATS score, discover the right jobs, build a stunning resume, and ace every interview — all in one place.**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://jobpilotai-aditayan.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://jobpilot-ai-frontend.vercel.app)
 [![TypeScript](https://img.shields.io/badge/TypeScript-95.8%25-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
@@ -171,21 +171,32 @@ npm run lint        # Run ESLint
 
 ```
 JobPilot-AI-Frontend/
-├── public/                 # Static assets
+├── public/                     # Static assets
 ├── src/
-│   ├── components/         # Reusable UI components
-│   ├── pages/              # Page-level components
-│   │   ├── Analyse/        # Resume analyser page
-│   │   ├── JobMatcher/     # Job matching page
-│   │   ├── ResumeBuilder/  # Resume builder page
-│   │   └── InterviewPrep/  # Interview prep page
-│   ├── hooks/              # Custom React hooks
-│   ├── services/           # API calls and service functions
-│   ├── types/              # TypeScript type definitions
-│   ├── utils/              # Helper/utility functions
-│   ├── App.tsx             # Root component
-│   └── main.tsx            # Entry point
-├── screenshots/            # App screenshots for README
+│   ├── assets/                 # Images, icons, and static files
+│   ├── components/             # Reusable UI components
+│   │   ├── ctabanner.tsx       # Call-to-action banner
+│   │   ├── features.tsx        # Features section
+│   │   ├── footer.tsx          # Footer component
+│   │   ├── hero.tsx            # Hero/landing section
+│   │   ├── loading.tsx         # Loading spinner/screen
+│   │   ├── navbar.tsx          # Navigation bar
+│   │   ├── pricing.tsx         # Pricing section
+│   │   ├── ProtectedRoutes.tsx # Auth-protected route wrapper
+│   │   └── PublicRoutes.tsx    # Public route wrapper
+│   ├── context/
+│   │   └── AppContext.tsx      # Global app state (React Context)
+│   ├── pages/
+│   │   ├── Account.tsx         # User profile & account page
+│   │   ├── Analyse.tsx         # Resume analyser page
+│   │   ├── BuildResume.tsx     # Resume builder page
+│   │   ├── Home.tsx            # Landing/home page
+│   │   ├── Interview.tsx       # Interview prep page
+│   │   ├── JobMatcher.tsx      # Job matcher page
+│   │   └── Login.tsx           # Login/auth page
+│   ├── App.tsx                 # Root component with routing
+│   └── index.css               # Global styles
+├── screenshots/                # App screenshots for README
 ├── index.html
 ├── vite.config.ts
 ├── tsconfig.json
