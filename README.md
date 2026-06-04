@@ -8,6 +8,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-95.8%25-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Utility--First_CSS-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
 
 <br/>
 
@@ -114,6 +115,7 @@ Whether you're a fresher applying for your first job or an experienced professio
 | **Language** | TypeScript |
 | **Build Tool** | Vite |
 | **Styling** | CSS |
+| **Styling** | Tailwind CSS |
 | **Linting** | ESLint |
 | **Deployment** | Vercel |
 
